@@ -1,0 +1,21 @@
+{
+	"name": "Emp_Personal_Details",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedService_Emp",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Employee_Dataset"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Emp_Personal_Info.txt",
+				"container": "source-container"
+			}
+		}
+	}
+}
