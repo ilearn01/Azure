@@ -1,0 +1,48 @@
+{
+	"name": "Delimited_Text_Sample",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Source_Sink_Linked_Service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Employee.txt",
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Emp_id",
+				"type": "String"
+			},
+			{
+				"name": " Name",
+				"type": "String"
+			},
+			{
+				"name": " Age",
+				"type": "String"
+			},
+			{
+				"name": " Salary",
+				"type": "String"
+			},
+			{
+				"name": " Address",
+				"type": "String"
+			},
+			{
+				"name": " Country",
+				"type": "String"
+			}
+		]
+	}
+}
