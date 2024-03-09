@@ -1,0 +1,21 @@
+{
+	"name": "Department",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedService_Emp",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Employee_Dataset"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Department.txt",
+				"container": "source-container"
+			}
+		}
+	}
+}
