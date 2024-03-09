@@ -1,0 +1,44 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedService_Emp",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Employee.txt",
+				"container": "source-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Emp_Id",
+				"type": "String"
+			},
+			{
+				"name": " Emp_Designation",
+				"type": "String"
+			},
+			{
+				"name": " Emp_Dept_Id",
+				"type": "String"
+			},
+			{
+				"name": " Emp_Manager",
+				"type": "String"
+			},
+			{
+				"name": " Emp_Project",
+				"type": "String"
+			}
+		]
+	}
+}
